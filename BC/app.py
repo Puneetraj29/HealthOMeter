@@ -26,4 +26,4 @@ def predict():
         prediction = "There's a high chance of you getting the disease, Please consult the doctor immediately"
     else:
         prediction = "Congratulations! No need to panic, you do not have any severe symptoms"
-    return(render_template("result.html", prediction_text=prediction))
+    return(render_templates("result.html", prediction_text=prediction))
