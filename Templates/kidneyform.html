@@ -1,0 +1,348 @@
+<!DOCTYPE HTML>
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title> Kidney Disease | Health-O-Meter</title>
+	<link rel="icon" type="image/png" href="/static/logodum.png">
+	<style>
+	body, html {
+    height: 100%;
+	}
+	.logo {
+		height: 10;
+		width: 122;
+		position: absolute;
+		padding: 12px;
+	}
+	ul {
+    list-style-type: none;
+	overflow: hidden;
+}
+
+li {
+	font-size: 16px;
+	font-family: Arial;
+	padding: 4px;
+	float: right;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color:#e86490;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.bg {
+    background-image: url("/static/formback.jpg");
+	height: 120%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ 
+ input[type=text],input[type=tel],input[type=email] ,input[type=date],textarea {
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 17px;
+    margin: 1px;
+    background-color: #f2f2f2;
+ }
+ .pad{
+padding-left:5em
+ }
+	p {
+	font-family: Arial;
+	font-size: 17px;
+	}
+.form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+	margin: 20px;
+	float: left;
+}
+@font-face {
+  font-family: "Muli-Regular";
+  src: url("../fonts/muli/Muli-Regular.ttf"); }
+@font-face {
+  font-family: "Muli-SemiBold";
+  src: url("../fonts/muli/Muli-SemiBold.ttf"); }
+@font-face {
+  font-family: "Muli-Bold";
+  src: url("../fonts/muli/Muli-Bold.ttf"); }
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Quicksand";
+  color: #66;
+  font-size: 17px;
+  margin: 0; }
+
+input, textarea, select, button {
+  font-family: "Quicksand";
+  color: #333;
+  font-size: 15px; }
+
+p, h1, h2, h3, h4, h5, h6, ul {
+  margin: 0; }
+
+
+ul {
+  padding-left: 0;
+  margin-bottom: 0; }
+
+a:hover {
+  text-decoration: none; }
+
+:focus {
+  outline: none; }
+
+
+form {
+  width: 50%;
+  padding-left: 25px; }
+
+.form-group {
+  }
+  .form-group .form-wrapper {
+    width: 10%; }
+    .form-group .form-wrapper:first-child {
+      margin-right: 20px; }
+
+.form-wrapper {
+  margin-bottom: 17px; }
+  .form-wrapper label {
+    margin-bottom: 30px;
+    display: block; }
+
+.form-control {
+  border: 1px solid #ccc;
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 10 20px;
+  border-radius: 20px;
+  font-family: "Quicksand";
+  background: none; }
+  .form-control:focus {
+    border: 1px solid #ae3c33; }
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  padding-left: 20px; }
+  select option[value=""][disabled] {
+    display: none; }
+
+button {
+  border: none;
+  width: 182px;
+  height: 45px;
+  margin: auto;
+  margin-top: 29px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: #ae3c33;
+  font-size: 13px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Quicksand";
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+  button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f11a09;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+  button:hover:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); }
+
+.checkbox {
+  position: relative; }
+  .checkbox label {
+    padding-left: 22px;
+    cursor: pointer; }
+  .checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer; }
+  .checkbox input:checked ~ .checkmark:after {
+    display: block; }
+
+.checkmark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 12px;
+  width: 13px;
+  border-radius: 2px;
+  background-color: #ebebeb;
+  border: 1px solid #ccc;
+  font-family: Material-Design-Iconic-Font;
+  color: #000;
+  font-size: 10px;
+  font-weight: bolder; }
+  .checkmark:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    content: '\f26b'; }
+
+@media (max-width: 991px) {
+  .inner {
+    min-width: 768px; } }
+@media (max-width: 767px) {
+  .inner {
+    min-width: auto;
+    background: none;
+    padding-top: 0;
+    padding-bottom: 0; }
+
+  form {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px; } }
+
+/*# sourceMappingURL=style.css.map */
+
+</style>
+</head>
+<div class="bg">
+<div class="bg">
+
+
+<br>
+<ul>
+  <li><a href="/"><b  style="font-family:Quicksand;">Home</b></a></li>
+  <li><a href="/Heart"><b  style="font-family:Quicksand;">Heart Disease</b></a></li>
+  <li class="dropdown">
+    <a href="/Kidney" class="dropbtn"><b style="font-family:Quicksand;">Kidney Disease</b>
+    
+	  <li class="dropdown">
+    <a href="/Diabetes" class="dropbtn"><b style="font-family:Quicksand;">Diabetes</b></a>
+    
+   </li>
+   <li><a href="/BreastCancer"><b style="font-family:Quicksand;">Breast Cancer</b></a></li>
+</ul>
+<br>
+<h2 style="font-family:Quicksand;">Check how safe are you from Chronic Kidney Disease by just a Click!</h2>
+<br>
+ 
+   
+          <div class="col-lg-6 col-md-6 col-12">
+            <form action="{{ url_for('predict')}}" method="post">
+              <div class="form-group">
+                <!-- TODO : Year to accept only year date picker -->
+                <label for="bp">Blood Pressure</label>
+                <input class="form-control" type="number" id="bp" name="Year" required="required">
+              </div><br>
+
+              <div class="form-group">
+                <label for="sg">Specific Gravity</label>
+                <input class="form-control" type="number" step="any" id="sg" name="sg" required="required" >
+              </div><br>
+
+              <div class="form-group">
+                <label for="al">Albumin</label>
+                <input class="form-control" type="number" id="al" name="al" required="required">
+              </div><br>
+
+              <div class="form-group">
+                <label for="su">Blood Sugar Level</label>
+                <input class="form-control" type="number" id="su" name="su" required="required">
+              </div><br>
+
+              <div class="form-group">
+                <label for="rbc">Red Blood Cells Count</label>
+                <input class="form-control" type="number" id="rbc" name="rbc" required="required" >
+              </div><br>
+
+              <div class="form-group">
+                <label for="pc">Pus Cell Count</label>
+                <input class="form-control" type="number" id="pc" name="pc" required="required">
+              </div><br>
+
+              <div class="form-group">
+                <label for="pcc">Pus Cell Clumps</label>
+                <input class="form-control" type="number" id="pcc" name="pcc" required="required">
+              </div>   <br>
+              <button type="submit" >Predict</button>
+            </form>
+
+</div>
+</body>
+</html>

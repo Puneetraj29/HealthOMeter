@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Result | Heath-O-Meter</title>
+<link rel="icon" type="image/png" href="/static/logodum.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand";
+  color: #66;
+  font-size: 20px;
+  margin: 0; }
+
+	.logo {
+		height: 10;
+		width: 122;
+		position: absolute;
+		padding: 12px;
+	}
+	ul {
+    list-style-type: none;
+	overflow: hidden;
+}
+
+li {
+	font-size: 16px;
+	font-family: Arial;
+	padding: 4px;
+	float: right;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color:#e86490;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 200px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="/"><b  style="font-family:Quicksand;">Home</b></a></li>
+</li>
+</ul>
+
+<h2>Disease Prediction</h2>
+
+<header>
+  <h2>{{ prediction_text }}</h2>
+</header>
+</body>
+</html>
