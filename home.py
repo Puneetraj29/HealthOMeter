@@ -37,7 +37,7 @@ def about():
 def ValuePredictor(to_predict_list, size):
     to_predict = np.array(to_predict_list).reshape(1, size)
     if (size == 5):
-        loaded_model = joblib.load('BC\Breastcancer_model.pkl')
+        loaded_model = joblib.load('BC/Breastcancer_model.pkl')
         result = loaded_model.predict(to_predict)
     elif (size == 6):
         loaded_model = joblib.load('diabetes\diabetes_model.pkl')
