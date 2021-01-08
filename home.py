@@ -40,10 +40,10 @@ def ValuePredictor(to_predict_list, size):
         loaded_model = joblib.load('BC/Breastcancer_model.pkl')
         result = loaded_model.predict(to_predict)
     elif (size == 6):
-        loaded_model = joblib.load('diabetes\diabetes_model.pkl')
+        loaded_model = joblib.load('diabetes/diabetes_model.pkl')
         result = loaded_model.predict(to_predict)
     elif (size == 7):
-        loaded_model = joblib.load('kidney\kidney_model.pkl')
+        loaded_model = joblib.load('kidney/kidney_model.pkl')
         result = loaded_model.predict(to_predict)
     return result[0]
 
